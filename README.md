@@ -1,1 +1,1 @@
-# Foundations-Of-Frontend-Web-Development
+# Foundations-Of-Frontend-Web-Development-labs
