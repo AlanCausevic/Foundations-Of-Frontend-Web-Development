@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Car Detailing Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel=”stylesheet” href=”css/bootstrap.css”>
+  <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
   <style>
-    body {
+      body {
       background-color: #1a1a1a;
       color: #fff;
     }
@@ -40,75 +41,83 @@
       position: relative;
       margin-left: 130px;
     }
-  
+    .fadein img{
+opacity:0.5;
+transition: 1s ease;
+}
+
+.fadein img:hover{
+opacity:1;
+transition: 1s ease;
+}
+
+ 
   </style>
 </head>
 <body>
-
-
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <nav>
-    <img src="car detailing bih.png" alt="car"; style="position: relative; height: 150px;">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav>
+      <img src="car detailing bih.png" alt="car"; style="position: relative; height: 150px;">
+    </nav>
+  
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Social.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Social</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galery.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Team.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Team</a>
+            </li>
+            <a class="nav-link" href="schedule.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Schedule</a>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Contact Us</a>
+          </li>
+          
+          </ul>
+    </div>
   </nav>
-
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Social.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Social</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="galery.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Team.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Team</a>
-          </li>
-          <a class="nav-link" href="schedule.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Schedule</a>
-          <li class="nav-item">
-            <a class="nav-link" href="contact-us.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Contact Us</a>
-        </li>
-        
-        </ul>
+  <div class="fadein">
+  <div class="center-image">
+    <img src="izmjena.png" class="img-fluid" alt="center" alt="bootstrap-responsive=">
   </div>
-</nav>
-
-<div class="center-image">
-  <img src="izmjena.png" alt="center" class="img-fluid" width="1200" height="700">
 </div>
-
-<div id="services" class="services text-center">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="service-item">
-          <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Exterior Detailing</h3>
-          <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Enhance your vehicle's allure with our meticulous Exterior Detailing services. From thorough washing and waxing to paint correction and sealant application, we bring out the best in your car's exterior. Experience a gleaming finish, protected paintwork, and renewed shine with our expert detailing solutions. Elevate your car's curb appeal today!</p>
+  
+  <div id="services" class="services text-center">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-item">
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Exterior Detailing</h3>
+            <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Enhance your vehicle's allure with our meticulous Exterior Detailing services. From thorough washing and waxing to paint correction and sealant application, we bring out the best in your car's exterior. Experience a gleaming finish, protected paintwork, and renewed shine with our expert detailing solutions. Elevate your car's curb appeal today!</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-item">
-          <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Interior Detailing</h3>
-          <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Revitalize your car's interior with our comprehensive Interior Detailing services. From deep cleaning and vacuuming to leather conditioning and odor removal, we restore your vehicle's interior to pristine condition. Enjoy a fresh, sanitized cabin with restored upholstery and a renewed sense of comfort. Elevate your driving experience with our expert interior detailing.</p>
+        <div class="col-md-4">
+          <div class="service-item">
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Interior Detailing</h3>
+            <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Revitalize your car's interior with our comprehensive Interior Detailing services. From deep cleaning and vacuuming to leather conditioning and odor removal, we restore your vehicle's interior to pristine condition. Enjoy a fresh, sanitized cabin with restored upholstery and a renewed sense of comfort. Elevate your driving experience with our expert interior detailing.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-item">
-          <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Full Detailing</h3>
-          <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Experience the ultimate transformation with our Full Car Detailing services. Combining meticulous exterior and interior detailing, we rejuvenate your vehicle inside and out. From paint correction and waxing to deep cleaning and odor removal, we deliver a comprehensive detailing experience that leaves your car looking immaculate and feeling refreshed. Elevate your car's appearance and comfort with our expert full car detailing services.</p>
+        <div class="col-md-4">
+          <div class="service-item">
+            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Full Detailing</h3>
+            <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Experience the ultimate transformation with our Full Car Detailing services. Combining meticulous exterior and interior detailing, we rejuvenate your vehicle inside and out. From paint correction and waxing to deep cleaning and odor removal, we deliver a comprehensive detailing experience that leaves your car looking immaculate and feeling refreshed. Elevate your car's appearance and comfort with our expert full car detailing services.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-
+  
 <footer class="footer">
   <div class="container">
     <p>&copy; 2024 Car Detailing BiH. Alan Causevic.</p>
@@ -118,7 +127,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+
 </body>
 </html>
-
