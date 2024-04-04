@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Car Detailing Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel=”stylesheet” href=”css/bootstrap.css”>
-  <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.css">
   <style>
-      body {
+    body {
       background-color: #1a1a1a;
       color: #fff;
     }
@@ -37,31 +37,53 @@
       padding: 20px 0;
       text-align: center;
     }
-    .center-image{
+    .center-image {
       position: relative;
-      margin-left: 130px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
     }
-    .fadein img{
-opacity:0.5;
-transition: 1s ease;
-}
+    .fadein img {
+      opacity: 0.5;
+      transition: 1s ease;
+    }
+    .fadein img:hover {
+      opacity: 1;
+      transition: 1s ease;
+    }
+    .modal-content {
+      color: #000; /* Font color black */
+    }
+    .modal-header {
+      background-color: #333; /* Header background color */
+      color: #fff; /* Header text color */
+    }
+    .modal-title {
+      color: #fff; /* Header title color */
+    }
 
-.fadein img:hover{
-opacity:1;
-transition: 1s ease;
-}
+    @media (max-width: 768px) {
+      .center-image {
+        margin-left: 0;
+      }
+    }
 
- 
+    @media (max-width: 576px) {
+      .center-image img {
+        max-width: 100%;
+      }
+    }
+
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <nav>
-      <img src="car detailing bih.png" alt="car"; style="position: relative; height: 150px;">
+      <img src="car detailing bih.png" alt="car" style="position: relative; height: 150px;">
     </nav>
   
       
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,19 +100,37 @@ transition: 1s ease;
             <li class="nav-item">
               <a class="nav-link" href="Team.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Team</a>
             </li>
-            <a class="nav-link" href="schedule.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Schedule</a>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Schedule</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="contact-us.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Contact Us</a>
-          </li>
-          
+            </li>
           </ul>
     </div>
   </nav>
   <div class="fadein">
-  <div class="center-image">
-    <img src="izmjena.png" class="img-fluid" alt="center" alt="bootstrap-responsive=">
+    <div class="center-image">
+      <img src="izmjena.png" class="img-fluid" alt="center">
+    </div>
   </div>
-</div>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Welcome</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          CARDETAILING
+        </div>
+      </div>
+    </div>
+  </div>
   
   <div id="services" class="services text-center">
     <div class="container">
@@ -98,20 +138,20 @@ transition: 1s ease;
       <div class="row">
         <div class="col-md-4">
           <div class="service-item">
-            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Exterior Detailing</h3>
-            <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Enhance your vehicle's allure with our meticulous Exterior Detailing services. From thorough washing and waxing to paint correction and sealant application, we bring out the best in your car's exterior. Experience a gleaming finish, protected paintwork, and renewed shine with our expert detailing solutions. Elevate your car's curb appeal today!</p>
+            <h3>Exterior Detailing</h3>
+            <p>Enhance your vehicle's allure with our meticulous Exterior Detailing services. From thorough washing and waxing to paint correction and sealant application, we bring out the best in your car's exterior. Experience a gleaming finish, protected paintwork, and renewed shine with our expert detailing solutions. Elevate your car's curb appeal today!</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-item">
-            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Interior Detailing</h3>
-            <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Revitalize your car's interior with our comprehensive Interior Detailing services. From deep cleaning and vacuuming to leather conditioning and odor removal, we restore your vehicle's interior to pristine condition. Enjoy a fresh, sanitized cabin with restored upholstery and a renewed sense of comfort. Elevate your driving experience with our expert interior detailing.</p>
+            <h3>Interior Detailing</h3>
+            <p>Revitalize your car's interior with our comprehensive Interior Detailing services. From deep cleaning and vacuuming to leather conditioning and odor removal, we restore your vehicle's interior to pristine condition. Enjoy a fresh, sanitized cabin with restored upholstery and a renewed sense of comfort. Elevate your driving experience with our expert interior detailing.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-item">
-            <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Full Detailing</h3>
-            <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Experience the ultimate transformation with our Full Car Detailing services. Combining meticulous exterior and interior detailing, we rejuvenate your vehicle inside and out. From paint correction and waxing to deep cleaning and odor removal, we deliver a comprehensive detailing experience that leaves your car looking immaculate and feeling refreshed. Elevate your car's appearance and comfort with our expert full car detailing services.</p>
+            <h3>Full Detailing</h3>
+            <p>Experience the ultimate transformation with our Full Car Detailing services. Combining meticulous exterior and interior detailing, we rejuvenate your vehicle inside and out. From paint correction and waxing to deep cleaning and odor removal, we deliver a comprehensive detailing experience that leaves your car looking immaculate and feeling refreshed. Elevate your car's appearance and comfort with our expert full car detailing services.</p>
           </div>
         </div>
       </div>
@@ -127,6 +167,12 @@ transition: 1s ease;
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('#exampleModal').modal('show');
+  });
+</script>
 
 </body>
 </html>

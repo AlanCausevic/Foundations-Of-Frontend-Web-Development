@@ -6,24 +6,20 @@
   <title>Car Detailing Social Media</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel=”stylesheet” href=”css/bootstrap.css”>
-  <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
-  
   <style>
     body {
       background-color: #1a1a1a;
       color: #fff;
-  
+      margin: 0;
+      padding: 0;
     }
     .navbar {
       background-color: #0d0d0d;
-      
-
     }
     .jumbotron {
       background-color: #1a1a1a;
       color: #fff;
-    
+      margin-bottom: 0;
     }
     .social-media {
       background-color: #0d0d0d;
@@ -31,102 +27,82 @@
       color: #fff;
       text-align: center;
     }
-    .social-media .btn {
-      margin: 40px;
+    .social-media .fa {
+      margin: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
     }
     .footer {
       background-color: #0d0d0d;
       color: #fff;
       padding: 20px 0;
       text-align: center;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
+    }
 
-.fa:hover {
-  opacity: 1.0;
-}
+    @media (max-width: 768px) {
+      .social-media .fa {
+        margin: 10px;
+        font-size: 24px;
+        width: 40px;
+      }
+    }
 
-.fa-facebook {
-  background:transparent;
-  color: blue;
-  padding: 5%;
-
-  
-}
-
-.fa-twitter {
-  background:transparent;
-  color: white;
-  padding: 5%;
-}
-.fa-instagram{
-  background:transparent;
-  color:#cd486b RGB: 205, 72, 107.;
-  padding: 5%;
-}
-.fa-youtube{
-  background: transparent;
-  color: rgb(182, 2, 2);
-  padding: 5%;
-}
-
-
-</style>
+    @media (max-width: 576px) {
+      .jumbotron img {
+        width: 100%;
+        height: auto;
+        margin-top: -20%;
+        margin-bottom: -20%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <nav>
-      <img src="car detailing bih.png" alt="car"; style="position: relative; height: 150px;">
-    </nav>  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Social.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Social</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="galery.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Team.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Team</a>
-              </li>
-              <a class="nav-link" href="schedule.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Schedule</a>
-              <li class="nav-item">
-                <a class="nav-link" href="contact-us.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Contact Us</a>
-            </li>
-            </ul>
-      </div>
-    </div>
-  </nav>
-
- 
-  <div class="fadein">
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div>
+    <img src="car detailing bih.png" alt="car" style="height: 150px;">
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Social.html">Social</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="galery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Team.html">Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="schedule.html">Schedule</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact-us.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <div class="jumbotron text-center">
-  <img src="social network.png"  class="bootstrap-responsive" alt="center" class="img-fluid" width="1080px" height="1080px" style="margin-top: -20%; margin-bottom: -20%;">
+  <img src="social network.png" class="img-fluid" alt="center">
 </div>
-</div>
-<div>
-    <center>
-        <a href="https://facebook.com" class="fa fa-facebook"></a>
-        <a href="https://twitter.com" class="fa fa-twitter"></a>
-        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
-        <a href="https://www.youtube.com" class="fa fa-youtube"></a>
-    </center>
 
+<div class="social-media">
+  <a href="https://facebook.com" class="fa fa-facebook"></a>
+  <a href="https://twitter.com" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+  <a href="https://www.youtube.com" class="fa fa-youtube"></a>
 </div>
+
 <footer class="footer">
   <div class="container">   
     <p>&copy; 2024 Car Detailing. All rights reserved.</p>
@@ -136,6 +112,5 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
